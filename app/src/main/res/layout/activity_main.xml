@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.kris.mockjianshu.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/rg_tab"
+        android:background="@android:color/black"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/selector_tab_find"
+            android:gravity="center|top"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="@string/tab_find"
+            android:textColor="@drawable/selector_tab_text"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_attention"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/selector_tab_attention"
+            android:gravity="center|top"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="@string/tab_attention"
+            android:textColor="@drawable/selector_tab_text"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_write"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/cb_icon_pen_normal"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:singleLine="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/selector_tab_message"
+            android:gravity="center|top"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="@string/tab_message"
+            android:textColor="@drawable/selector_tab_text"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/selector_tab_me"
+            android:gravity="center|top"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="@string/tab_me"
+            android:textColor="@drawable/selector_tab_text"
+            />
+    </RadioGroup>
+</RelativeLayout>
