@@ -10,7 +10,7 @@ import android.support.v4.view.ViewPager;
 import com.viewpagerindicator.TabPageIndicator;
 
 import example.kris.mockjianshu.R;
-import example.kris.mockjianshu.fragment.MediaFragment;
+import example.kris.mockjianshu.fragment.GridLayoutFragment;
 
 /**
  * Created by fangyu on 2016/4/18.
@@ -37,7 +37,8 @@ public class MediaOverviewActivity extends FragmentActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return MediaFragment.newInstance(CONTENT[position % CONTENT.length]);
+            return GridLayoutFragment.newInstance(CONTENT[position % CONTENT.length]);
+//            return MediaFragment.newInstance(CONTENT[position % CONTENT.length]);
         }
 
         @Override

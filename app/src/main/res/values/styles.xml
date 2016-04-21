@@ -69,4 +69,12 @@
         <item name="android:typeface">monospace</item>
     </style>
 
+    <style name="LoadingProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/loading_animation</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:maxWidth">40dp</item>
+        <item name="android:maxHeight">40dp</item>
+    </style>
+
 </resources>

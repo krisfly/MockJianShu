@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:background="@android:color/black"
+              android:orientation="horizontal"
+              android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/tvprogram_search_loading"
+        style="@style/LoadingProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvprogram_search_loading"
+        android:gravity="center"
+        android:text="正在加载..."
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"/>
+
+</LinearLayout>

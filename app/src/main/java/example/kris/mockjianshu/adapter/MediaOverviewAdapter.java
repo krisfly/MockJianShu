@@ -24,6 +24,9 @@ import example.kris.mockjianshu.R;
  */
 public class MediaOverviewAdapter extends RecyclerView.Adapter<MediaOverviewAdapter.MyViewHolder> {
 
+    private static final int TYPE_ITEM = 0;
+    private static final int TYPE_FOOTER = 1;
+
     private Context context;
     private List<String> mDatas;
 
@@ -34,7 +37,13 @@ public class MediaOverviewAdapter extends RecyclerView.Adapter<MediaOverviewAdap
 
     protected void initData() {
         mDatas = new ArrayList<>();
-        for (int i = 'A'; i < 'z'; i++) {
+        for (int i = 'A'; i <= 'Z'; i++) {
+            mDatas.add("" + (char) i);
+        }
+    }
+
+    public void addData() {
+        for (int i = 'A'; i <= 'Z'; i++) {
             mDatas.add("" + (char) i);
         }
     }

@@ -41,6 +41,7 @@ public class MainActivity extends FragmentActivity {
                         startActivity(new Intent(MainActivity.this, MediaOverviewActivity.class));
                         break;
                     case R.id.rb_write:
+                        startActivity(new Intent(MainActivity.this, LoadingMoreActivity.class));
                         break;
                     case R.id.rb_message:
                         break;
